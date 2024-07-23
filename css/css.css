@@ -1,5 +1,6 @@
 :root {
   --main-color-green: #009688;
+  --card-color: #dfeff9;
 }
 
 * {
@@ -18,7 +19,8 @@ img {
 html {
   scroll-behavior: smooth;
   cursor: default;
-  /* overflow-x: hidden; */
+  min-width: 455px;
+  overflow-x: hidden;
 }
 
 a {
@@ -106,8 +108,6 @@ header .main-ul .main-li a:hover,
   display: none;
   background-color: white;
   position: absolute;
-  /* top: 40px; */
-  /* left: 475px; */
   list-style: none;
   width: 120px;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
@@ -198,7 +198,7 @@ header .main-ul .hidden-ul .hidden-li a:hover {
 
 .work .card {
   font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #fff;
+  background-color: var(--card-color);
   margin: 5px;
   width: 100%;
   color: rgb(0, 0, 0);
@@ -259,7 +259,7 @@ header .main-ul .hidden-ul .hidden-li a:hover {
 
 .price .price-card-holder .price-card .price-content {
   padding: 15px;
-  background-color: #fff;
+  background-color: var(--card-color);
   border-bottom: #dddddd solid 1px;
   font-size: large;
   font-weight: lighter;
@@ -361,7 +361,7 @@ textarea {
 }
 
 .contact #contact-form form .form-input textarea {
-  height: 45px;
+  height: 55px;
   resize: none;
 }
 
@@ -428,7 +428,7 @@ footer .social .social-icons img{
 
 
 
-@media screen and (min-width: 1px) and (max-width: 650px) {
+@media screen and (min-width: 1px) and (max-width: 710px) {
   body {
     overflow-x: hidden;
   }
@@ -446,6 +446,7 @@ footer .social .social-icons img{
 
     
   }
+
 
   .active img{
     width: 20px !important;
@@ -506,4 +507,12 @@ footer .social .social-icons img{
 
 
 
+}
+
+
+@media screen and (min-width: 1px) and (max-width: 500px) {
+
+  #search-image{
+    /* display: none !important; */
+  }
 }
