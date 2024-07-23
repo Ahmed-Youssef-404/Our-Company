@@ -20,7 +20,7 @@ html {
   scroll-behavior: smooth;
   cursor: default;
   min-width: 455px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 a {
